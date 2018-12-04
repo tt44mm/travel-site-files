@@ -1,0 +1,15 @@
+.main {
+    color: #2f5572;
+    border-radius: 30%;
+    -webkit-columns: 300px 2;
+            columns: 300px 2;
+}
+
+.box a {
+        display: block;
+        color: red;
+    }
+
+.box a :before {
+            content: '####';
+        }
