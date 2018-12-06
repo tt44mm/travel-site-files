@@ -1,16 +1,7 @@
-$mainblue: #2f5572;
-.main {
-    color: $mainblue;
-    border-radius: 30%;
-    columns: 300px 2;
-}
-
-.box {
-    a {
-        display: block;
-        color: red;
-         :before {
-            content: '####';
-        }
-    }
-}
+@import "normalize.css";
+@import "base/_variables";
+@import "base/_global";
+@import "base/_wrapper";
+@import "base/_pagesection";
+@import "modules/_large-hero";
+@import "modules/_btn";
