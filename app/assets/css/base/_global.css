@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    /* calculate with paddings included */
+}
+
 body {
     /* font-family: 'Roboto', sans-serif; */
     font-family: interstate, sans-serif;
@@ -8,4 +13,8 @@ body {
 img {
     max-width: 100%;
     height: auto;
+}
+
+a {
+    color: $mainOrange;
 }
