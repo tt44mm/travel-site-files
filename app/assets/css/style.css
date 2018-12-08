@@ -2,6 +2,7 @@
 @import "base/_mixins";
 @import "base/_variables";
 @import "base/_global";
+@import "modules/_sprite";
 @import "base/_wrapper";
 @import "base/_row";
 @import "base/_pagesection";
@@ -11,3 +12,4 @@
 @import "modules/_generic-content-container";
 @import "modules/_section-title";
 @import "modules/_feature-item";
+@import "modules/_testimonial";

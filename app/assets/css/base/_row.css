@@ -1,16 +1,35 @@
 .row {
+    
     &--gutters {
-        margin-right: -40px;
+        margin-right: -60px;
     }
+    
     &--gutters>div {
-        padding-right: 40px;
+        padding-right: 60px;
     }
+    
     &--gutters-large {
         margin-right: -100px;
     }
+    
     &--gutters-large>div {
         padding-right: 100px;
     }
+
+    &--gutters-small {
+        margin-right: -40px;
+    }
+    
+    &--gutters-small>div {
+        padding-right: 40px;
+    }
+
+
+    &--padding-top {
+        padding-top: 80px;
+      }
+    
+
     @mixin atMedium {
         &__medium-1 {
             float: left;
@@ -61,14 +80,104 @@
             width: 100%;
         }
     }
+
+    @mixin atLarge {
+        &__large-1 {
+            float: left;
+            width: 8.33%;            
+        }
+        &__large-2 {
+            float: left;
+            width: 16.66%;
+        }
+        &__large-3 {
+            float: left;
+            width: 25%;
+        }
+        &__large-4 {
+            float: left;
+            width: 33.33%;
+        }
+        &__large-5 {
+            float: left;
+            width: 41.66%;
+        }
+        &__large-6 {
+            float: left;
+            width: 50%;
+        }
+        &__large-7 {
+            float: left;
+            width: 58.33%;
+        }
+        &__large-8 {
+            float: left;
+            width: 66.66%;
+        }
+        &__large-9 {
+            float: left;
+            width: 75%;
+        }
+        &__large-10 {
+            float: left;
+            width: 83.33%;
+        }
+        &__large-11 {
+            float: left;
+            width: 91.66%;
+        }
+        &__large-12 {
+            float: left;
+            width: 100%;
+        }
+
+    }
+
+
+
     &::after {
         content: "";
         display: table;
         clear: both;
     }
+
     @mixin atMedium {
         &--margin-top-medium {
             margin-top: 2rem;
         }
     }
+
+
+    @mixin atLarge {
+        &--margin-top-large {
+            margin-top: 2rem;
+        }
+    }
+
+
+ /* Begin Equal Height Rules */
+ &--equal-height-at-medium {
+    @mixin atMedium {
+      display: flex;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
+    }
+
+  }
+
+  &--equal-height-at-large {
+    @mixin atLarge {
+      display: flex;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
+    }
+
+  }
+
 }
