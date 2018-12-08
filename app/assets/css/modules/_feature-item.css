@@ -1,0 +1,31 @@
+.feature-item {
+    padding-bottom: 1.5rem;
+    @mixin atMedium {
+        padding-left: 96px;
+        position: relative;
+    }
+    &__icon {
+        margin: 0.2rem auto;
+        display: block;
+        @mixin atMedium {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+    &__title {
+        font-size: 1.3rem;
+        font-weight: 300;
+        margin-bottom: 0.8rem;
+        @mixin atMedium {
+            font-size: 1.875rem;
+        }
+    }
+    &__text {
+        font-weight: 300;
+        line-height: 1.65;
+        @mixin atMedium {
+            font-size: 1.1rem;
+        }
+    }
+}

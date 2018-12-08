@@ -356,7 +356,8 @@ template {
 
 body {
     /* font-family: 'Roboto', sans-serif; */
-    font-family: interstate, sans-serif;
+    font-family: 'interstate',
+sans-serif;
     /* font-family: 'Times New Roman', Times, serif; */
     color: #333;
 }
@@ -392,6 +393,14 @@ a {
 
 .row--gutters>div {
         padding-right: 40px;
+    }
+
+.row--gutters-large {
+        margin-right: -100px;
+    }
+
+.row--gutters-large>div {
+        padding-right: 100px;
     }
 
 @media(min-width: 800px) {
@@ -463,16 +472,18 @@ a {
 
 .pagesection--blue {
         background-color: #2f5572;
+        color: white;
     }
 
 @media(min-width: 800px) {
 
 .pagesection {
-        padding: 4.5rem 0
+        padding: 2.5rem 0
 }
     }
 
 .headline {
+    /* font-family: $titleFont; */
     font-weight: 400;
     font-size: 1.6rem;
     color: #2f5572;
@@ -663,4 +674,91 @@ a {
 
 .generic-content-container p a {
         font-weight: 500;
+    }
+
+.section-title {
+    font-family: 'Roboto',
+sans-serif;
+    font-size: 2.55rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media(min-width: 530px) {
+
+.section-title {
+        font-size: 3.75rem
+}
+    }
+
+.section-title strong {
+        font-weight: 500;
+    }
+
+.section-title__icon {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: .6rem;
+    }
+
+@media(min-width: 530px) {
+
+.section-title__icon {
+            margin-right: .5rem;
+            margin-left: 0;
+            margin-bottom: 0;
+            display: inline-block
+    }
+    }
+
+.feature-item {
+    padding-bottom: 1.5rem;
+}
+
+@media(min-width: 800px) {
+
+.feature-item {
+        padding-left: 96px;
+        position: relative
+}
+    }
+
+.feature-item__icon {
+        margin: 0.2rem auto;
+        display: block;
+    }
+
+@media(min-width: 800px) {
+
+.feature-item__icon {
+            position: absolute;
+            left: 0;
+            top: 0
+    }
+    }
+
+.feature-item__title {
+        font-size: 1.3rem;
+        font-weight: 300;
+        margin-bottom: 0.8rem;
+    }
+
+@media(min-width: 800px) {
+
+.feature-item__title {
+            font-size: 1.875rem
+    }
+    }
+
+.feature-item__text {
+        font-weight: 300;
+        line-height: 1.65;
+    }
+
+@media(min-width: 800px) {
+
+.feature-item__text {
+            font-size: 1.1rem
+    }
     }
