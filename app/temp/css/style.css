@@ -356,8 +356,7 @@ template {
 
 body {
     /* font-family: 'Roboto', sans-serif; */
-    font-family: 'interstate',
-sans-serif;
+    font-family: 'interstate',sans-serif;
     /* font-family: 'Times New Roman', Times, serif; */
     color: #333;
 }
@@ -368,7 +367,7 @@ img {
 }
 
 a {
-    color: #AA5500;
+    color: #d59541;
 }
 
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
@@ -717,7 +716,7 @@ Instead edit gulp/templates/sprite */
     }
 
 .headline--orange {
-        color: #AA5500;
+        color: #d59541;
     }
 
 .headline--small {
@@ -866,7 +865,7 @@ Instead edit gulp/templates/sprite */
 }
 
 .btn--orange {
-        background-color: #AA5500;
+        background-color: #d59541;
     }
 
 .btn--large {
@@ -891,8 +890,7 @@ Instead edit gulp/templates/sprite */
     }
 
 .section-title {
-    font-family: 'Roboto',
-sans-serif;
+    font-family: 'Roboto',sans-serif;
     font-size: 2.55rem;
     font-weight: 300;
     text-align: center;
@@ -1015,7 +1013,7 @@ sans-serif;
   }
 
 .testimonial__subtitle {
-    color: #AA5500;
+    color: #d59541;
     text-align: center;
     font-weight: 400;
     font-size: 0.9375rem;
@@ -1043,4 +1041,41 @@ sans-serif;
         margin-top: 0.1rem;
         margin-left: 3rem
 }
+    }
+
+.site-header {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(47,85,114,0.3);
+    width: 100%;
+}
+
+.site-header__btn-container {
+        float: right;
+        padding-top: 0.5rem;
+    }
+
+.primary-nav--pull-right {
+        float: right;
+    }
+
+.primary-nav ul {
+        margin:0;
+        padding: 0;
+    }
+
+.primary-nav ul::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+.primary-nav ul li {
+        float: left;
+        padding-right: 20px;
+        list-style-type: none;
+    }
+
+.primary-nav a {
+        text-decoration: none;
     }
