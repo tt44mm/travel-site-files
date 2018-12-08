@@ -1046,13 +1046,77 @@ Instead edit gulp/templates/sprite */
 .site-header {
     position: absolute;
     z-index: 2;
-    background-color: rgba(47,85,114,0.3);
     width: 100%;
+    padding-top: 0.5rem;
+
 }
+
+@media(min-width: 800px) {
+
+.site-header {
+        background-color: rgba(47,85,114,0.3)
+
+}
+    }
 
 .site-header__btn-container {
         float: right;
-        padding-top: 0.5rem;
+    }
+
+.site-header__logo {
+        position: absolute;
+        top: 0;
+        background-color: #2f5572;
+        left: 50%;
+        -webkit-transform: translateX(-50%) scale(.6);
+                transform: translateX(-50%) scale(.6);
+        -webkit-transform-origin: 50% 0;
+                transform-origin: 50% 0;
+        padding: 25px 36px;
+
+    }
+
+@media(min-width: 800px) {
+
+.site-header__logo {
+            left: auto; 
+            -webkit-transform: translateX(0); 
+                    transform: translateX(0)
+
+    }
+    }
+
+.site-header__logo__graphic {
+            text-indent: -9999px;
+        }
+
+.site-header__menu-mobilicon {
+        background-color: white;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: 10px;
+        top: 10px;
+
+    }
+
+@media(min-width: 800px) {
+
+.site-header__menu-mobilicon {
+            display: none
+
+    }
+    }
+
+.site-header__menu-content {
+        display: none;
+    }
+
+@media(min-width: 800px) {
+
+.site-header__menu-content {
+            display: block
+    }
     }
 
 .primary-nav--pull-right {
@@ -1072,10 +1136,11 @@ Instead edit gulp/templates/sprite */
 
 .primary-nav ul li {
         float: left;
-        padding-right: 20px;
         list-style-type: none;
+        padding: 12px 12px;
     }
 
 .primary-nav a {
         text-decoration: none;
+        color: white;
     }
